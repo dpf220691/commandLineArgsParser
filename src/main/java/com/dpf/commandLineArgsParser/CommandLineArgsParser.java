@@ -39,8 +39,8 @@ public class CommandLineArgsParser {
 
 	private static <T> void injectAttributes(T instance, Map<String, String> args) {
 		for (Field field : Arrays.stream(instance.getClass().getDeclaredFields())
-				.filter(field -> !field.isAnnotationPresent(IgnoreArg.class) && args.containsKey(getArgName(field)))
-				.collect(Collectors.toList())) {
+				.filter(field -> !field.isAnnotationPresent(IgnoreArg.class))
+				.filter(field -> args.containsKey(getArgName(field))).collect(Collectors.toList())) {
 			boolean isPrivate = !field.isAccessible();
 			try {
 				if (isPrivate) {
