@@ -6,7 +6,6 @@ import org.junit.Test;
 
 import com.dpf.CommandLineArgsParser.util.ModelDummy;
 import com.dpf.commandLineArgsParser.CommandLineArgsParser;
-import com.dpf.commandLineArgsParser.exception.ModelInstantiationException;
 import com.dpf.commandLineArgsParser.exception.UnsupportedClassException;
 
 public class CommandLineArgsParserTest {
