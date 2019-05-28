@@ -84,19 +84,19 @@ public class CommandLineArgsParser {
 		}
 	}
 
-	private static Object parse(Class<?> parseTo, String value) {
-		if (parseTo.equals(int.class) || parseTo.equals(Integer.class)) {
+	private static Object parse(Class<?> parseToClass, String value) {
+		if (parseToClass.equals(int.class) || parseToClass.equals(Integer.class)) {
 			return Integer.valueOf(value);
-		} else if (parseTo.equals(float.class) || parseTo.equals(Float.class)) {
+		} else if (parseToClass.equals(float.class) || parseToClass.equals(Float.class)) {
 			return Float.valueOf(value);
-		} else if (parseTo.equals(double.class) || parseTo.equals(Double.class)) {
+		} else if (parseToClass.equals(double.class) || parseToClass.equals(Double.class)) {
 			return Double.valueOf(value);
-		} else if (parseTo.equals(boolean.class) || parseTo.equals(Boolean.class)) {
+		} else if (parseToClass.equals(boolean.class) || parseToClass.equals(Boolean.class)) {
 			return Boolean.valueOf(value);
-		} else if (parseTo.equals(String.class)) {
+		} else if (parseToClass.equals(String.class)) {
 			return value;
 		} else {
-			throw new UnsupportedClassException(parseTo);
+			throw new UnsupportedClassException(parseToClass);
 		}
 	}
 
