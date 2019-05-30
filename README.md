@@ -10,10 +10,10 @@ You can use jitpack.io to add git repositories to your project.
 
 ```xml
         <dependency>
-			<groupId>com.github.dpf220691</groupId>
-			<artifactId>commandLineArgsParser</artifactId>
-			<version>0.1</version>
-		</dependency>
+		<groupId>com.github.dpf220691</groupId>
+		<artifactId>commandLineArgsParser</artifactId>
+		<version>0.1</version>
+	</dependency>
 ```
 
 #### 2. Create a model class
@@ -35,7 +35,7 @@ public class Model {
 	@Arg("str")
 	public String onlyAcceptsIntsFloatsDoublesAndStrings;
 
-    (...)
+    	(...)
 
 }
 ```
