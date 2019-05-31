@@ -209,4 +209,6 @@ gradle-app.setting
 ### Gradle Patch ###
 **/build/
 
+site/
+
 # End of https://www.gitignore.io/api/java,gradle,maven,eclipse,intellij
